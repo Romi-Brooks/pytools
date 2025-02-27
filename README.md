@@ -40,7 +40,7 @@ pip install requests
 #### 运行代码
 打开终端或命令提示符，导航到保存代码的目录。
 ```bash
-python free4_scraper.py
+python main.py
 ```
 在程序启动后，输入以下命令之一：
 
@@ -55,13 +55,70 @@ exit：退出程序。
 #### 示例操作
 ##### 获取最新内容：
 
-输入 today，程序会从网站获取最新内容，并提示用户选择感兴趣的结果。
-
-用户可以选择一个或多个结果，程序会提取并打印对应的下载链接。
+输入 today，会从网站获取最新内容
 
 #####  搜索内容：
-输入 search，程序会提示用户输入搜索关键词。
+输入 search，会提示用户输入搜索关键词，返回与关键词匹配的内容。
 
-输入关键词后，程序会搜索网站并提取相关结果，然后提示用户选择感兴趣的结果。
+## (NSFW) Getpic
+#### 环境准备
+##### Python 环境：
+确保已安装 Python 3.x。
+##### 依赖库：
+安装 requests, wget 库（如果尚未安装）：
+```bash
+pip install wget
+```
+#### 运行代码
+打开终端或命令提示符，导航到保存代码的目录。
+```bash
+python main.py
+```
 
-用户可以选择一个或多个结果，程序会提取并打印对应的下载链接。
+#### 示例操作
+输入a：下载全站随机图片。  
+输入b：下载全站随机图片（无NSFW，即不含成人内容）。  
+输入c：下载MirlKoi推荐的图片。  
+输入d：下载横屏图片。  
+输入e：下载竖屏图片。  
+
+如果输入错误，脚本会提示用户重新输入。  
+
+> 下载的图片会以当前时间戳命名（格式为YYYY-MM-DD-HH-MM-SS.jpg），并保存到img文件夹中。  
+
+## Let-m4s-together  / 哔哩哔哩缓存视频合并
+#### 环境准备
+##### Python 环境：
+确保已安装 Python 3.x。
+##### 依赖库：
+确保系统能够调用ffmpeg
+
+#### 运行代码
+打开终端或命令提示符，导航到保存代码的目录。
+```bash
+python main.py
+```
+
+#### 示例操作
+输入文件夹路径  
+输入包含entry.json文件和audio.m4s/video.m4s文件的文件夹的绝对路径。  
+
+
+## spotify-cover-get
+#### 环境准备
+##### Python 环境：
+确保已安装 Python 3.x。
+##### 依赖库：
+安装wget 库（如果尚未安装）：
+```bash
+pip install wget
+```
+#### 运行代码
+打开终端或命令提示符，导航到保存代码的目录。
+```bash
+python main.py
+```
+
+#### 示例操作
+输入Spotify分享链接  
+输入一个Spotify的分享链接（例如：https://open.spotify.com/track/ 或 https://open.spotify.com/album/）。
