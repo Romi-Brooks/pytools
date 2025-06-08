@@ -121,4 +121,4 @@ python main.py
 
 #### 示例操作
 输入Spotify分享链接  
-输入一个Spotify的分享链接（例如：https://open.spotify.com/track/ 或 https://open.spotify.com/album/）。
+输入一个Spotify的分享链接, 例如：https://open.spotify.com/track/ 或 https://open.spotify.com/album/
